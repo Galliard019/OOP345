@@ -40,9 +40,9 @@ namespace seneca
 
 	private:
 		TvShow(std::string id, const std::string& title, unsigned short year,
-            const std::string& summary, std::vector<TvEpisode> m_episodes = {})
+            const std::string& summary, std::vector<TvEpisode*> episodes = {})
 			: MediaItem(title, summary, year),
-                m_id(id), m_episodes(std::move(m_episodes))
+                m_id(id), m_episodes(std::move(episodes))
 		{
 			
 		}
