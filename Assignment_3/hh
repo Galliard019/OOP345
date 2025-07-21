@@ -1,0 +1,8 @@
+const TvShow* m_show{};
+unsigned short m_numberOverall{};
+unsigned short m_season{};
+ unsigned short m_numberInSeason{};
+std::string m_airDate{};
+unsigned int m_length{};
+std::string m_title{};
+std::string m_summary{};    

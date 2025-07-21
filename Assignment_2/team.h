@@ -1,3 +1,9 @@
+//Name: Joao Marcos Freire de Castro
+//Seneca ID: 173962234
+//Seneca e-mail: jmfreire-de-castro@myseneca.ca
+//Date: 15/06/2025
+
+
 #ifndef SENECA_TEAM_H
 #define SENECA_TEAM_H
 
@@ -7,9 +13,7 @@
 
 namespace seneca
 {
-    /// <summary>
-    /// Team class manages a collection of Character pointers (composition).
-    /// </summary>
+    // Team class manages a collection of Character pointers (composition).
     class Team
     {
         std::string m_name{};

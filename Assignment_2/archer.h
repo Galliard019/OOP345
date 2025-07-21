@@ -1,3 +1,9 @@
+//Name: Joao Marcos Freire de Castro
+//Seneca ID: 173962234
+//Seneca e-mail: jmfreire-de-castro@myseneca.ca
+//Date: 15/06/2025
+
+
 #ifndef SENECA_ARCHER_H
 #define SENECA_ARCHER_H
 
@@ -6,9 +12,6 @@
 
 namespace seneca
 {
-    /// <summary>
-    /// Archer class (always uses SuperHealth, no special abilities).
-    /// </summary>
     template <typename Weapon_t>
     class Archer : public CharacterTpl<seneca::SuperHealth>
     {

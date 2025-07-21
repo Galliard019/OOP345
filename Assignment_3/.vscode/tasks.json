@@ -1,13 +1,17 @@
 {
     "tasks": [
+        //shell should be use with ${workspaceFolder}/*.cpp, and cppbuild should be used with ${file}
+        //this task.json is only viable if you have only one .cpp file in the workspace folder (no properly modularization)
         {
-            "type": "cppbuild",
+            "type": //"shell", 
+                    "cppbuild",
             "label": "C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
                 //"-g",
-                "${workspaceFolder}/*.cpp",
+                //"${workspaceFolder}/*.cpp",
+                "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

@@ -1,3 +1,9 @@
+//Name: Joao Marcos Freire de Castro
+//Seneca ID: 173962234
+//Seneca e-mail: jmfreire-de-castro@myseneca.ca
+//Date: 15/06/2025
+
+
 #ifndef SENECA_ROGUE_H
 #define SENECA_ROGUE_H
 
@@ -6,9 +12,6 @@
 
 namespace seneca
 {
-    /// <summary>
-    /// Templated Rogue class with two special abilities and a dagger.
-    /// </summary>
     template <typename T, typename FirstAbility_t, typename SecondAbility_t>
     class Rogue : public CharacterTpl<T>
     {

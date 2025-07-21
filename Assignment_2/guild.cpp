@@ -1,3 +1,9 @@
+//Name: Joao Marcos Freire de Castro
+//Seneca ID: 173962234
+//Seneca e-mail: jmfreire-de-castro@myseneca.ca
+//Date: 15/06/2025
+
+
 #include "guild.h"
 
 namespace seneca {
@@ -105,7 +111,7 @@ namespace seneca {
         }
 
         void Guild::showMembers() const {
-            if (m_size == 0) {
+            if (m_name.empty()/*m_size == 0*/) {
                 std::cout << "No guild." << std::endl;
                 return;
             }

@@ -1,3 +1,8 @@
+//Name: Joao Marcos Freire de Castro
+//Seneca ID: 173962234
+//Seneca e-mail: jmfreire-de-castro@myseneca.ca
+//Date: 15/06/2025
+
 #ifndef SENECA_BARBARIAN_H
 #define SENECA_BARBARIAN_H
 
@@ -5,9 +10,6 @@
 
 namespace seneca
 {
-    /// <summary>
-    /// Templated Barbarian class with health, ability, and weapons.
-    /// </summary>
     template <typename T, typename Ability_t, typename Weapon_t>
     class Barbarian : public CharacterTpl<T>
     {
@@ -43,7 +45,7 @@ namespace seneca
             m_ability.useAbility(this);
             int dmg = getAttackAmnt();
             m_ability.transformDamageDealt(dmg);
-            std::cout << "Barbarian deals " << dmg << " melee damage!" << std::endl;
+            std::cout << "    Barbarian deals " << dmg << " melee damage!" << std::endl;
             enemy->takeDamage(dmg);
         }
 
