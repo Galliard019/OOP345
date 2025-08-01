@@ -8,11 +8,14 @@
             "name": "g++ compiler (one cpp only)", //(gdb) Launch
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
-            "args": [],
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [
+                "${workspaceFolder}/Stations1.txt",
+                "${workspaceFolder}/Stations2.txt"
+            ],
             "stopAtEntry": false,
-            "cwd": //"${fileDirname}",
-                   "${workspaceFolder}",
+            "cwd": "${fileDirname}",
+                   //"${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
