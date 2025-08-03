@@ -102,18 +102,19 @@ bool CustomerOrder::isOrderFilled() const
 
 bool CustomerOrder::isItemFilled(const std::string& itemName) const 
 {
-    bool found = false;
+    //bool found = false;
     for (size_t i = 0; i < m_cntItem; ++i) 
     {
         if (m_lstItem[i]->m_itemName == itemName) 
         {
             if (!m_lstItem[i]->m_isFilled) 
             {
-                found = true;
+                //found = true;
+                return false;
             }
         }
     }
-    return found;
+    return true;
 }
 
 void CustomerOrder::fillItem(Station& station, std::ostream& os) 
