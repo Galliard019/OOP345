@@ -149,7 +149,7 @@ CustomerOrders::operator=(&&): Hong H. - 1-Room Office
 
 CustomerOrders::fillItem()
 isOrderFilled(): MISSING
-isItemFilled("CPU"): FILLED
+isItemFilled("CPU"): MISSING
 isOrderFilled(): MISSING
     Filled Hong H., 1-Room Office [Filing Cabinet]
     Filled Hong H., 1-Room Office [Office Chair]

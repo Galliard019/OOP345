@@ -107,10 +107,9 @@ bool CustomerOrder::isItemFilled(const std::string& itemName) const
     {
         if (m_lstItem[i]->m_itemName == itemName) 
         {
-            found = true;
             if (!m_lstItem[i]->m_isFilled) 
             {
-                found = false;
+                found = true;
             }
         }
     }
