@@ -45,6 +45,11 @@ CustomerOrder::CustomerOrder(const std::string& record)
     }
 }
 
+CustomerOrder::CustomerOrder(const CustomerOrder& other) 
+{
+    throw std::runtime_error("Cannot make copies.");
+}
+
 CustomerOrder::CustomerOrder(CustomerOrder&& other) noexcept 
 {
     *this = std::move(other);

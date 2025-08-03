@@ -30,7 +30,7 @@ class CustomerOrder
 public:
     CustomerOrder();
     CustomerOrder(const std::string& record);
-    CustomerOrder(const CustomerOrder&) = delete;
+    CustomerOrder(const CustomerOrder&);
     CustomerOrder& operator=(const CustomerOrder&) = delete;
 
     CustomerOrder(CustomerOrder&& other) noexcept;

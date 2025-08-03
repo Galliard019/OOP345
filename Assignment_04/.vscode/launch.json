@@ -11,7 +11,8 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [
                 "${workspaceFolder}/Stations1.txt",
-                "${workspaceFolder}/Stations2.txt"
+                "${workspaceFolder}/Stations2.txt",
+                "${workspaceFolder}/CustomerOrders.txt"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
