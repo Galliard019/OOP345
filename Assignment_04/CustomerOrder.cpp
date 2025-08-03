@@ -114,7 +114,7 @@ bool CustomerOrder::isItemFilled(const std::string& itemName) const
             }
         }
     }
-    return true;
+    return found;
 }
 
 void CustomerOrder::fillItem(Station& station, std::ostream& os) 
